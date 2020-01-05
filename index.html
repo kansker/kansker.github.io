@@ -1,762 +1,486 @@
 <html>
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="愛之語線上測驗解析"/>
-    <meta property="og:description" content="愛的語言分為五種，1.肯定的言詞、2.接受禮物、3.服務的行動、4.精心的時刻、5.身體的接觸。透過愛之語的線上測驗，了解我和情人接收到愛的方式，讓愛情永不褪色，婚姻永保如新。快來看看我的愛之語和我另一半的愛之語為何？"/>
-    <meta name="description" content="愛的語言分為五種，1.肯定的言詞、2.接受禮物、3.服務的行動、4.精心的時刻、5.身體的接觸。透過愛之語的線上測驗，了解我和情人接收到愛的方式，讓愛情永不褪色，婚姻永保如新。快來看看我的愛之語和我另一半的愛之語為何？">
-    <title>愛之語線上測驗</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <style>
-        .center {
-            text-align: center;
-        }
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:type" content="article"/>
+	<meta property="og:title" content="愛之語線上測驗解析"/>
+	<meta property="og:description" content="愛的語言分為五種，1.肯定的言詞、2.接受禮物、3.服務的行動、4.精心的時刻、5.身體的接觸。透過愛之語的線上測驗，了解我和情人接收到愛的方式，讓愛情永不褪色，婚姻永保如新。快來看看我的愛之語和我另一半的愛之語為何？"/>
+	<meta name="description" content="愛的語言分為五種，1.肯定的言詞、2.接受禮物、3.服務的行動、4.精心的時刻、5.身體的接觸。透過愛之語的線上測驗，了解我和情人接收到愛的方式，讓愛情永不褪色，婚姻永保如新。快來看看我的愛之語和我另一半的愛之語為何？">
+	<title>愛之語線上測驗</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<style>
+		.center {
+			text-align: center;
+		}
 
-        .alert {
-            background-color: #E79E9B;
-        }
+		.alert {
+			background-color: #E79E9B;
+		}
 
-        .answer {
-            text-align: center;
-            font-weight: bolder;
-        }
+		.answer {
+			text-align: center;
+			font-weight: bolder;
+		}
 
-        .clear-both {
-            clear: both;
-        }
+		.clear-both {
+			clear: both;
+		}
 
-        .container1 {
-            background: url('img/heart.jpg');
-            background-size: cover;
-            min-height: 100vh;
-        }
+		.container1 {
+			background: url('img/heart.jpg');
+			background-size: cover;
+			min-height: 100vh;
+		}
 
-        @media screen and (min-width: 768px) {
-            .card {
-                width: 80%;
-                height: 80%;
-                margin: 40px auto;
-                border-radius: 10px;
-                font-size: 24px;
-                background-color: #333;
-                opacity: 0.87;
-                color: #fff;
-                text-align: center;
-                padding: 50px;
-            }
+		@media screen and (min-width: 768px) {
+			.card {
+				width: 80%;
+				height: 80%;
+				margin: 40px auto;
+				border-radius: 10px;
+				font-size: 24px;
+				background-color: #333;
+				opacity: 0.87;
+				color: #fff;
+				text-align: center;
+				padding: 50px;
+			}
 
-            .card-content {
-                position: relative;
-                top: 20%;
-            }
+			.card-content {
+				position: relative;
+				top: 20%;
+			}
 
-            .result-content {
-                width: 80%;
-                margin: 20px auto;
-                border-radius: 10px;
-                font-size: 16px;
-                background-color: #333;
-                opacity: 0.87;
-                color: #fff;
-                text-align: center;
-                padding: 10px;
-            }
-        }
+			.result-content {
+				width: 80%;
+				margin: 20px auto;
+				border-radius: 10px;
+				font-size: 16px;
+				background-color: #333;
+				opacity: 0.87;
+				color: #fff;
+				text-align: center;
+				padding: 10px;
+			}
+		}
 
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 20px;
-            }
+		@media screen and (max-width: 768px) {
+			h1 {
+				font-size: 20px;
+			}
 
-            .card {
-                width: 80%;
-                height: 50%;
-                margin: 100px auto;
-                border-radius: 10px;
-                font-size: 16px;
-                background-color: #333;
-                opacity: 0.87;
-                color: #fff;
-                text-align: center;
-                padding: 10px;
-            }
+			.card {
+				width: 80%;
+				height: 50%;
+				margin: 100px auto;
+				border-radius: 10px;
+				font-size: 16px;
+				background-color: #333;
+				opacity: 0.87;
+				color: #fff;
+				text-align: center;
+				padding: 10px;
+			}
 
-            .card-content {
-                position: relative;
-                top: 3%;
-            }
+			.card-content {
+				position: relative;
+				top: 3%;
+			}
 
-            .result-content {
-                width: 97%;
-                margin: 20px auto;
-                border-radius: 10px;
-                font-size: 14px;
-                background-color: #333;
-                opacity: 0.87;
-                color: #fff;
-                text-align: center;
-                padding: 8px;
-            }
+			.result-content {
+				width: 97%;
+				margin: 20px auto;
+				border-radius: 10px;
+				font-size: 14px;
+				background-color: #333;
+				opacity: 0.87;
+				color: #fff;
+				text-align: center;
+				padding: 8px;
+			}
 
-        }
-
-
-        .result-content table {
-            background-color: #fff;
-        }
+		}
 
 
-        .selected {
-            color: red;
-        }
+		.result-content table {
+			background-color: #fff;
+		}
 
-        .selected-card {
-            opacity: 0.95;
-        }
-    </style>
+
+		.selected {
+			color: red;
+		}
+
+		.selected-card {
+			opacity: 0.95;
+		}
+	</style>
 </head>
 
 <body>
 <div class="container container1" id="app">
 
-    <div class="card" v-if="step == 0">
-        <div class="card-content">
-            <div class="center">
-                <h1>愛之語線上測驗</h1>
-                <p>出處: 發現你的愛之語—愛的語言評量檢測</p>
-            </div>
-            <div id="title-content"></div>
-            <div style="clear:both;"></div>
-            <br>
-            <btn id='start-button' @click="start()" class="btn btn-primary btn-block">開始測驗</btn>
-        </div>
-    </div>
+	<div class="card" v-if="step == 0">
+		<div class="card-content">
+			<div class="center">
+				<h1>愛之語線上測驗</h1>
+				<p>出處: 發現你的愛之語—愛的語言評量檢測</p>
+			</div>
+			<div id="title-content"></div>
+			<div style="clear:both;"></div>
+			<br>
+			<btn id='start-button' @click="start()" class="btn btn-primary btn-block">開始測驗</btn>
+		</div>
+	</div>
 
-    <div class="card" v-if="step > 0 && step <= questions.length">
-        <div class="card-content">
-            <div style="padding:20px;">
-                <h1>第{{question.number}}題</h1>
-                <div v-for="item in question.options">
-                    <label @click="select(item)" :class="{ selected: answer === item.type}"><input type="radio" style="width: 16px;height: 16px" v-model="answer" :value="item.type"> {{item.text}}</label></br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-3 col-md-6">
-                    <div v-if="step == questions.length">
-                        <button :disabled="answer==''" class="btn btn-primary btn-block" id="count" @click="send();">送出</button>
-                        <br>
-                        <a @click="last();" style="font-size: 14px;">上一題</a>
-                    </div>
-                    <div v-else>
-                        <button :disabled="answer==''" @click="next();" class="next-button btn btn-primary btn-block">下一題</button>
-                        <br>
-                        <a v-if="step > 1" class="previous-button" @click="last();" style="font-size: 14px;">上一題</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="card" v-if="step > 0 && step <= questions.length">
+		<div class="card-content">
+			<div style="padding:20px;">
+				<h1>第{{question.number}}題</h1>
+				<div v-for="item in question.options">
+					<label @click="select(item)" :class="{ selected: answer === item.type}"><input type="radio" style="width: 16px;height: 16px" v-model="answer" :value="item.type"> {{item.text}}</label></br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<div v-if="step == questions.length">
+						<button :disabled="answer==''" class="btn btn-primary btn-block" id="count" @click="send();">送出</button>
+						<br>
+						<a @click="last();" style="font-size: 14px;">上一題</a>
+					</div>
+					<div v-else>
+						<button :disabled="answer==''" @click="next();" class="next-button btn btn-primary btn-block">下一題</button>
+						<br>
+						<a v-if="step > 1" class="previous-button" @click="last();" style="font-size: 14px;">上一題</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div v-if="step > questions.length" class="result-content">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-                <div class="title" style="">
-                    <h1 id="result-title">愛之語解析</h1>
-                    <h4>
-                        <span id="most-way">我最需要的愛的表達方式為：</span> <b id="max_result">{{analytic.name}}</b>。
-                    </h4>
-                    <div><span id="result_description">{{analytic.description}}</span> <a href="#table" id="read-more">了解更多</a></div>
-                    <div>
-                        <a id="re-quiz" href="javascript:void(0);" class="btn btn-primary pull-right" @click="init();">重新測驗</a>
-                    </div>
-                </div>
+	<div v-if="step > questions.length" class="result-content">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+				<div class="title" style="">
+					<h1 id="result-title">愛之語解析</h1>
+					<h4>
+						<span id="most-way">我最需要的愛的表達方式為：</span> <b id="max_result">{{analytic.name}}</b>。
+					</h4>
+					<div><span id="result_description">{{analytic.description}}</span> <a href="#table" id="read-more">了解更多</a></div>
+					<div>
+						<a id="re-quiz" href="javascript:void(0);" class="btn btn-primary pull-right" @click="init();">重新測驗</a>
+					</div>
+				</div>
 
-                <canvas id="myChart" width="400" height="400"></canvas>
-            </div>
-        </div>
-        <table id="table" class="table table-bordered table-striped">
-            <tbody id="result-content"></tbody>
-            <tr v-for="item in analytics">
-                <td>
-                    <b>{{item.type}}. {{item.name}}</b>
-                    <br>
-                    {{item.description}}
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div style="clear:both;"></div>
+				<canvas id="myChart" width="400" height="400"></canvas>
+			</div>
+		</div>
+		<table id="table" class="table table-bordered table-striped">
+			<tbody id="result-content"></tbody>
+			<tr v-for="item in analytics">
+				<td>
+					<b>{{item.type}}. {{item.name}}</b>
+					<br>
+					{{item.description}}
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="clear:both;"></div>
 </div>
 </body>
 <script src="js/vue.min.js"></script>
 <script src="js/Chart.min.js"></script>
 <script>
 var app = new Vue({
-    el: '#app',
-    data: {
-        loading: false,
-        mode: '',
-        step: 0,
-        A: 0,
-        B: 0,
-        C: 0,
-        D: 0,
-        E: 0,
-        questions: [
-            {
-                "number": "1",
-                "options": [{
-                    "type": "A",
-                    "text": "我喜歡收到寫滿讚美與肯定的小紙條"
-                },
-                    {
-                        "type": "E",
-                        "text": "我喜歡被擁抱的感覺"
-                    }
-                ]
-            },
-            {
-                "number": "2",
-                "options": [{
-                    "type": "B",
-                    "text": "我喜歡和在我心目中佔有特殊地位的人獨處"
-                },
-                    {
-                        "type": "D",
-                        "text": "每當有人給我實際的幫助，我就會覺得他是愛我的"
-                    }
-                ]
-            },
-            {
-                "number": "3",
-                "options": [{
-                    "type": "C",
-                    "text": "我喜歡收到禮物"
-                },
-                    {
-                        "type": "B",
-                        "text": "我有空就喜歡去探訪朋友和所愛的人"
-                    }
-                ]
-            },
-            {
-                "number": "4",
-                "options": [{
-                    "type": "D",
-                    "text": "有人幫我做事，我就會覺得被愛"
-                },
-                    {
-                        "type": "E",
-                        "text": "有人碰觸我的身體，我就會覺得被愛"
-                    }
-                ]
-            },
-            {
-                "number": "5",
-                "options": [{
-                    "type": "E",
-                    "text": "當我所愛、所景仰的人攬著我的肩膀，我就會有被愛的感覺"
-                },
-                    {
-                        "type": "C",
-                        "text": "當我所愛、所景仰的人送我禮物，我就會有被愛的感覺"
-                    }
-                ]
-            },
-            {
-                "number": "6",
-                "options": [{
-                    "type": "B",
-                    "text": "我喜歡和朋友或所愛的人到處走走"
-                },
-                    {
-                        "type": "E",
-                        "text": "我喜歡和在我心目中有特殊地位的人擊掌或牽手"
-                    }
-                ]
-            },
-            {
-                "number": "7",
-                "options": [{
-                    "type": "C",
-                    "text": "愛的具體象徵（禮物）對我很重要"
-                },
-                    {
-                        "type": "A",
-                        "text": "受到別人的肯定讓我有被愛的感覺"
-                    }
-                ]
-            },
-            {
-                "number": "8",
-                "options": [{
-                    "type": "E",
-                    "text": "我喜歡和我所喜歡的人促膝長談"
-                },
-                    {
-                        "type": "A",
-                        "text": "我喜歡聽到別人說我很漂亮，很迷人或很有氣質"
-                    }
-                ]
-            },
-            {
-                "number": "9",
-                "options": [{
-                    "type": "B",
-                    "text": "我喜歡和好友及所愛的人在一起"
-                },
-                    {
-                        "type": "C",
-                        "text": "我喜歡收到朋友或所愛的人贈送的禮物"
-                    }
-                ]
-            },
-            {
-                "number": "10",
-                "options": [{
-                    "type": "A",
-                    "text": "我喜歡聽到別人接納我的話"
-                },
-                    {
-                        "type": "D",
-                        "text": "如果有人幫我的忙，我會知道他是愛我的"
-                    }
-                ]
-            },
-            {
-                "number": "11",
-                "options": [{
-                    "type": "B",
-                    "text": "我喜歡和朋友與所愛的人一起做同一件事"
-                },
-                    {
-                        "type": "A",
-                        "text": "我喜歡聽到別人對我說友善的話"
-                    }
-                ]
-            },
-            {
-                "number": "12",
-                "options": [{
-                    "type": "D",
-                    "text": "別人的表現要比他的言語更能感動我 "
-                },
-                    {
-                        "type": "E",
-                        "text": "被擁抱讓我覺得與對方很親近，也覺得自己很重要"
-                    }
-                ]
-            },
-            {
-                "number": "13",
-                "options": [{
-                    "type": "A",
-                    "text": "我珍惜別人的讚美，儘量避免受到批評"
-                },
-                    {
-                        "type": "C",
-                        "text": "送我許多小禮物要比送我一份大禮物更能感動我"
-                    }
-                ]
-            },
-            {
-                "number": "14",
-                "options": [{
-                    "type": "B",
-                    "text": "當我和人聊天或一起做事時，我會覺得與他很親近"
-                },
-                    {
-                        "type": "E",
-                        "text": "朋友或所愛的人若常常與我有身體的接觸，我會覺得與他很親近"
-                    }
-                ]
-            },
-            {
-                "number": "15",
-                "options": [{
-                    "type": "A",
-                    "text": "我喜歡聽到別人稱讚我的成就"
-                },
-                    {
-                        "type": "D",
-                        "text": "當別人勉強自己為我做一件事，我會覺得他很愛我"
-                    }
-                ]
-            },
-            {
-                "number": "16",
-                "options": [{
-                    "type": "E",
-                    "text": "我喜歡朋友或所愛的人走過我身邊時，故意用身體觸碰我的感覺"
-                },
-                    {
-                        "type": "B",
-                        "text": "我喜歡別人聽我說話，而且表現出興趣十足的樣子"
-                    }
-                ]
-            },
-            {
-                "number": "17",
-                "options": [{
-                    "type": "D",
-                    "text": "當朋友或所愛的人幫助我完成工作，我會覺得被愛"
-                },
-                    {
-                        "type": "C",
-                        "text": "我很喜歡收到朋友或所愛的人送的禮物"
-                    }
-                ]
-            },
-            {
-                "number": "18",
-                "options": [{
-                    "type": "A",
-                    "text": "我喜歡聽到別人稱讚我的外表"
-                },
-                    {
-                        "type": "B",
-                        "text": "當別人願意體諒我的感受時，我會有被愛的感覺"
-                    }
-                ]
-            },
-            {
-                "number": "19",
-                "options": [{
-                    "type": "E",
-                    "text": "在我心目中有特殊地位的人觸碰我的身體時，我覺得有安全感  "
-                },
-                    {
-                        "type": "D",
-                        "text": "服務的行動讓我覺得被愛"
-                    }
-                ]
-            },
-            {
-                "number": "20",
-                "options": [{
-                    "type": "D",
-                    "text": "我很感激在我心目中有特殊地位的人為我付出那麼多"
-                },
-                    {
-                        "type": "C",
-                        "text": "我喜歡收到在我心目中有特殊地位的人送我禮物"
-                    }
-                ]
-            },
-            {
-                "number": "21",
-                "options": [{
-                    "type": "B",
-                    "text": "我很喜歡被人呵護備至的感覺"
-                },
-                    {
-                        "type": "D",
-                        "text": "我很喜歡被人服務的感覺"
-                    }
-                ]
-            },
-            {
-                "number": "22",
-                "options": [{
-                    "type": "C",
-                    "text": "有人送我生日禮物時，我會覺得被愛及受重視"
-                },
-                    {
-                        "type": "A",
-                        "text": "有人在我生日那天對我說出特別的話，我會覺得被愛"
-                    }
-                ]
-            },
-            {
-                "number": "23",
-                "options": [{
-                    "type": "C",
-                    "text": "有人送我禮物，我就知道他有想到我的需要"
-                },
-                    {
-                        "type": "D",
-                        "text": "有人幫我作家事，我會覺得被愛"
-                    }
-                ]
-            },
-            {
-                "number": "24",
-                "options": [{
-                    "type": "B",
-                    "text": "我很感激有人耐心聽我說話而且不插嘴"
-                },
-                    {
-                        "type": "C",
-                        "text": "我很感激有人記得某個特別日子並且送我禮物"
-                    }
-                ]
-            },
-            {
-                "number": "25",
-                "options": [{
-                    "type": "D",
-                    "text": "我喜歡知道我所愛的人因為關心我，幫我做家事或買麵包等 "
-                },
-                    {
-                        "type": "B",
-                        "text": "我喜歡和在我心目中有特殊地位的人一起去逛街、旅行"
-                    }
-                ]
-            },
-            {
-                "number": "26",
-                "options": [{
-                    "type": "E",
-                    "text": "我喜歡和最親近的人牽手、擁抱、親吻"
-                },
-                    {
-                        "type": "C",
-                        "text": "有人不為了特別理由而送我禮物，我會覺得很開心"
-                    }
-                ]
-            },
-            {
-                "number": "27",
-                "options": [{
-                    "type": "A",
-                    "text": "我喜歡聽到有人向我表示感謝"
-                },
-                    {
-                        "type": "B",
-                        "text": "與人交談時，我喜歡對方注視我的眼睛"
-                    }
-                ]
-            },
-            {
-                "number": "28",
-                "options": [{
-                    "type": "C",
-                    "text": "朋友或所愛的人所送的禮物，我會特別珍惜"
-                },
-                    {
-                        "type": "E",
-                        "text": "朋友或所愛的人碰觸我的身體，那種感覺真好"
-                    }
-                ]
-            },
-            {
-                "number": "29",
-                "options": [{
-                    "type": "D",
-                    "text": "有人熱心做我所要求的事時，我會覺得被愛"
-                },
-                    {
-                        "type": "A",
-                        "text": "聽到別人對我表示感激，我會覺得被愛"
-                    }
-                ]
-            },
-            {
-                "number": "30",
-                "options": [{
-                    "type": "E",
-                    "text": "我每天都需要身體的接觸"
-                },
-                    {
-                        "type": "A",
-                        "text": "我每天都需要肯定的言語（如：別人表達感激我的付出和努力）"
-                    }
-                ]
-            }
-        ],
-        analytics: [
-            {
-                "type": "A",
-                "short_name": "肯定的言詞",
-                "name": "肯定的言詞 (Words of affirmation)",
-                "description": "心理學家威廉詹姆士說過，人類最深處的需要，可能就是感覺被人欣賞。肯定的言詞，可以滿足很多人這樣的需要。 這麼做他會覺得很有愛 讚賞他鼓勵他，常常提及他多重要（如常說我愛你）"
-            },
-            {
-                "type": "B",
-                "short_name": "精心的時刻",
-                "name": "精心的時刻 (Quality time)",
-                "description": "精心時刻的意思，並不是指我們必須用所有共處的時間凝視著對方，而是兩人同心一起做些什麼，並給予對方全部的注意力。所參與的那項活動，其實是次要，重要的是在情感上與對方共度的注意力交集時刻。 這麼做他會覺得很有愛 傾聽與陪伴，跟他說話時一定要保持眼光的接觸，千萬不要一邊聽他說話一邊做別的事，也別急著給建議解決問題。以及為對方安排一些精心設計的活動。"
-            },
-            {
-                "type": "C",
-                "short_name": "接受禮物",
-                "name": "接受禮物(Receiving gifts)",
-                "description": "禮物是一件你可以拿在手裡，說：「你看，他想到我。」或者「他仍記得我。」的東西，你必然是想到了什麼人才給他禮物。禮物的本身是那思想的象徵，它是否值錢無關緊要，重要的是你想到了他。而且只是在你心裡的想法不算數，你的思想要經由禮物實際地表達出來，而且把它當做愛的表示送出去才算數。 這麼做他會覺得很有愛 時常送小禮物給對方，要花點心思的小禮物，或用尋寶方式給對方出人意表的禮物。"
-            },
-            {
-                "type": "D",
-                "short_name": "服務的行動",
-                "name": "服務的行動(Acts of service)",
-                "description": "所謂服務的行動，是指對方想要你做的事。你設法藉著替他(她)服務，而使他(她)高興；藉著替他(她)做事，而表示你對他(她)的愛。這樣的行動像是：做一頓飯、幫他買早餐、幫他溜狗、陪他加班，這些都是服務的行動。這些服務需投資以思想、計劃、時間、努力並精力的。如果是以正面的精神來完成，那就真是愛的表現。 這麼做他會覺得很有愛 主動為對方服務，送他上下班，幫他做事，如做家務，修理東西。"
-            },
-            {
-                "type": "E",
-                "short_name": "身體的接觸",
-                "name": "身體的接觸(Physical touch)",
-                "description": "身體的接觸可以建立或破壞一種關係，它可以傳達恨或愛。對主要愛的語言是身體接觸的人，那信息遠勝於「我恨你」或「我愛你」的字句。巴掌打在臉上，對任何孩子都是有害的，可是對一個愛的語言是撫觸的孩子，那甚至是具毀滅性的。一個溫柔的擁抱，對任何孩子都傳達了愛，可是對主要愛之語是身體接觸的孩子，則表達了強烈的愛；對成年入而言也是如此。 這麼做他會覺得很有愛 擁抱，牽牽手、摸摸頭、拍拍肩，尤其是他哭哭的時後，沒有任何事比摟著他更重要了。"
-            }],
-        question: {},
-        answer: '',
-        answers: [],
-        analytic: {}
-    },
-    watch: {
-        answer: function (nV, oV) {
-            this.answers[this.step - 1] = nV;
-            console.log(this.answers[this.step - 1]);
-        }
-    },
-    created() {
-    },
-    mounted() {
-        this.init();
-    },
-    methods: {
-        init() {
-            this.A = 0;
-            this.B = 0;
-            this.C = 0;
-            this.D = 0;
-            this.E = 0;
-            this.answers = [];
-            for (var i = 0; i < this.questions.length; i++) {
-                this.answers.push('');
-            }
-            this.step = 0;
-        },
-        start() {
-            this.step = 1;
-            this.question = this.questions[this.step - 1];
-        },
-        select(item) {
-            this.answer = item.type;
-        },
-        next() {
-            this.step++;
-            this.answer = this.answers[this.step - 1];
-            this.question = this.questions[this.step - 1];
-            console.log(JSON.stringify(this.answers));
-        },
-        last() {
-            this.step--;
-            this.answer = this.answers[this.step - 1];
-            this.question = this.questions[this.step - 1];
-            console.log(JSON.stringify(this.answers));
-        },
-        send() {
-            this.step++;
-            console.log(JSON.stringify(this.answers));
-            this.A = 0;
-            this.B = 0;
-            this.C = 0;
-            this.D = 0;
-            this.E = 0;
-            for (var i = 0; i < this.answers.length; i++) {
-                var ans = this.answers[i];
-                if (ans == 'A') {
-                    this.A++;
-                } else if (ans == 'B') {
-                    this.B++;
-                } else if (ans == 'C') {
-                    this.C++;
-                } else if (ans == 'D') {
-                    this.D++;
-                } else if (ans == 'E') {
-                    this.E++;
-                }
-            }
-            var maxOne = 0;
-            var scope = 0;
-            if (this.A > scope) {
-                maxOne = 0;
-                scope = this.A;
-            }
-            if (this.B > scope) {
-                maxOne = 1;
-                scope = this.B;
-            }
-            if (this.C > scope) {
-                maxOne = 2;
-                scope = this.C;
-            }
-            if (this.D > scope) {
-                maxOne = 3;
-                scope = this.D;
-            }
-            if (this.E > scope) {
-                maxOne = 4;
-                scope = this.E;
-            }
-            this.analytic = this.analytics[maxOne];
-            setTimeout(function () {
-                app.chart(app.A, app.B, app.C, app.D, app.E);
-            }, 500);
+	el: '#app',
+	data: {
+		loading: false,
+		mode: '',
+		step: 0,
+		A: 0,
+		B: 0,
+		C: 0,
+		D: 0,
+		E: 0,
+		questions: [
+			{ "number": "1", "options": [{ "type": "A", "text": "我喜歡收到寫滿讚美與肯定的小紙條" }, { "type": "E", "text": "我喜歡被擁抱的感覺" }] },
+			{ "number": "2", "options": [{ "type": "B", "text": "我喜歡和在我心目中佔有特殊地位的人獨處" }, { "type": "D", "text": "每當有人給我實際的幫助，我就會覺得他是愛我的" }] },
+			{ "number": "3", "options": [{ "type": "C", "text": "我喜歡收到禮物" }, { "type": "B", "text": "我有空就喜歡去探訪朋友和所愛的人" }] },
+            { "number": "4", "options": [{ "type": "D", "text": "有人幫我做事，我就會覺得被愛" }, { "type": "E", "text": "有人碰觸我的身體，我就會覺得被愛" }] },
+            { "number": "5", "options": [{ "type": "E", "text": "當我所愛、所景仰的人攬著我的肩膀，我就會有被愛的感覺" }, { "type": "C", "text": "當我所愛、所景仰的人送我禮物，我就會有被愛的感覺" }] },
+            { "number": "6", "options": [{ "type": "B", "text": "我喜歡和朋友或所愛的人到處走走" }, { "type": "E", "text": "我喜歡和在我心目中有特殊地位的人擊掌或牽手" }] },
+            { "number": "7", "options": [{ "type": "C", "text": "愛的具體象徵（禮物）對我很重要" }, { "type": "A", "text": "受到別人的肯定讓我有被愛的感覺" }] },
+            { "number": "8", "options": [{ "type": "E", "text": "我喜歡和我所喜歡的人促膝長談" }, { "type": "A", "text": "我喜歡聽到別人說我很漂亮，很迷人或很有氣質" }] },
+            { "number": "9", "options": [{ "type": "B", "text": "我喜歡和好友及所愛的人在一起" }, { "type": "C", "text": "我喜歡收到朋友或所愛的人贈送的禮物" }] },
+            { "number": "10", "options": [{ "type": "A", "text": "我喜歡聽到別人接納我的話" }, { "type": "D", "text": "如果有人幫我的忙，我會知道他是愛我的" }] },
+            { "number": "11", "options": [{ "type": "B", "text": "我喜歡和朋友與所愛的人一起做同一件事" }, { "type": "A", "text": "我喜歡聽到別人對我說友善的話" }] },
+            { "number": "12", "options": [{ "type": "D", "text": "別人的表現要比他的言語更能感動我 " }, { "type": "E", "text": "被擁抱讓我覺得與對方很親近，也覺得自己很重要" }] },
+            { "number": "13", "options": [{ "type": "A", "text": "我珍惜別人的讚美，儘量避免受到批評" }, { "type": "C", "text": "送我許多小禮物要比送我一份大禮物更能感動我" }] },
+            { "number": "14", "options": [{ "type": "B", "text": "當我和人聊天或一起做事時，我會覺得與他很親近" }, { "type": "E", "text": "朋友或所愛的人若常常與我有身體的接觸，我會覺得與他很親近" }] },
+            { "number": "15", "options": [{ "type": "A", "text": "我喜歡聽到別人稱讚我的成就" }, { "type": "D", "text": "當別人勉強自己為我做一件事，我會覺得他很愛我" }] },
+            { "number": "16", "options": [{ "type": "E", "text": "我喜歡朋友或所愛的人走過我身邊時，故意用身體觸碰我的感覺" }, { "type": "B", "text": "我喜歡別人聽我說話，而且表現出興趣十足的樣子" }] },
+            { "number": "17", "options": [{ "type": "D", "text": "當朋友或所愛的人幫助我完成工作，我會覺得被愛" }, { "type": "C", "text": "我很喜歡收到朋友或所愛的人送的禮物" }] },
+            { "number": "18", "options": [{ "type": "A", "text": "我喜歡聽到別人稱讚我的外表" }, { "type": "B", "text": "當別人願意體諒我的感受時，我會有被愛的感覺" }] },
+            { "number": "19", "options": [{ "type": "E", "text": "在我心目中有特殊地位的人觸碰我的身體時，我覺得有安全感  " }, { "type": "D", "text": "服務的行動讓我覺得被愛" }] },
+            { "number": "20", "options": [{ "type": "D", "text": "我很感激在我心目中有特殊地位的人為我付出那麼多" }, { "type": "C", "text": "我喜歡收到在我心目中有特殊地位的人送我禮物" }] },
+            { "number": "21", "options": [{ "type": "B", "text": "我很喜歡被人呵護備至的感覺" }, { "type": "D", "text": "我很喜歡被人服務的感覺" }] },
+            { "number": "22", "options": [{ "type": "C", "text": "有人送我生日禮物時，我會覺得被愛及受重視" }, { "type": "A", "text": "有人在我生日那天對我說出特別的話，我會覺得被愛" }] },
+            { "number": "23", "options": [{ "type": "C", "text": "有人送我禮物，我就知道他有想到我的需要" }, { "type": "D", "text": "有人幫我作家事，我會覺得被愛" }] },
+            { "number": "24", "options": [{ "type": "B", "text": "我很感激有人耐心聽我說話而且不插嘴" }, { "type": "C", "text": "我很感激有人記得某個特別日子並且送我禮物" }] },
+            { "number": "25", "options": [{ "type": "D", "text": "我喜歡知道我所愛的人因為關心我，幫我做家事或買麵包等 " }, { "type": "B", "text": "我喜歡和在我心目中有特殊地位的人一起去逛街、旅行" }] },
+            { "number": "26", "options": [{ "type": "E", "text": "我喜歡和最親近的人牽手、擁抱、親吻" }, { "type": "C", "text": "有人不為了特別理由而送我禮物，我會覺得很開心" }] },
+            { "number": "27", "options": [{ "type": "A", "text": "我喜歡聽到有人向我表示感謝" }, { "type": "B", "text": "與人交談時，我喜歡對方注視我的眼睛" }] },
+            { "number": "28", "options": [{ "type": "C", "text": "朋友或所愛的人所送的禮物，我會特別珍惜" }, { "type": "E", "text": "朋友或所愛的人碰觸我的身體，那種感覺真好" }] },
+            { "number": "29", "options": [{ "type": "D", "text": "有人熱心做我所要求的事時，我會覺得被愛" }, { "type": "A", "text": "聽到別人對我表示感激，我會覺得被愛" }] },
+            { "number": "30", "options": [{ "type": "E", "text": "我每天都需要身體的接觸" }, { "type": "A", "text": "我每天都需要肯定的言語（如：別人表達感激我的付出和努力）" }] }
+		],
+		analytics: [
+			{
+				"type": "A",
+				"short_name": "肯定的言詞",
+				"name": "肯定的言詞 (Words of affirmation)",
+				"description": "心理學家威廉詹姆士說過，人類最深處的需要，可能就是感覺被人欣賞。肯定的言詞，可以滿足很多人這樣的需要。 這麼做他會覺得很有愛 讚賞他鼓勵他，常常提及他多重要（如常說我愛你）"
+			},
+			{
+				"type": "B",
+				"short_name": "精心的時刻",
+				"name": "精心的時刻 (Quality time)",
+				"description": "精心時刻的意思，並不是指我們必須用所有共處的時間凝視著對方，而是兩人同心一起做些什麼，並給予對方全部的注意力。所參與的那項活動，其實是次要，重要的是在情感上與對方共度的注意力交集時刻。 這麼做他會覺得很有愛 傾聽與陪伴，跟他說話時一定要保持眼光的接觸，千萬不要一邊聽他說話一邊做別的事，也別急著給建議解決問題。以及為對方安排一些精心設計的活動。"
+			},
+			{
+				"type": "C",
+				"short_name": "接受禮物",
+				"name": "接受禮物(Receiving gifts)",
+				"description": "禮物是一件你可以拿在手裡，說：「你看，他想到我。」或者「他仍記得我。」的東西，你必然是想到了什麼人才給他禮物。禮物的本身是那思想的象徵，它是否值錢無關緊要，重要的是你想到了他。而且只是在你心裡的想法不算數，你的思想要經由禮物實際地表達出來，而且把它當做愛的表示送出去才算數。 這麼做他會覺得很有愛 時常送小禮物給對方，要花點心思的小禮物，或用尋寶方式給對方出人意表的禮物。"
+			},
+			{
+				"type": "D",
+				"short_name": "服務的行動",
+				"name": "服務的行動(Acts of service)",
+				"description": "所謂服務的行動，是指對方想要你做的事。你設法藉著替他(她)服務，而使他(她)高興；藉著替他(她)做事，而表示你對他(她)的愛。這樣的行動像是：做一頓飯、幫他買早餐、幫他溜狗、陪他加班，這些都是服務的行動。這些服務需投資以思想、計劃、時間、努力並精力的。如果是以正面的精神來完成，那就真是愛的表現。 這麼做他會覺得很有愛 主動為對方服務，送他上下班，幫他做事，如做家務，修理東西。"
+			},
+			{
+				"type": "E",
+				"short_name": "身體的接觸",
+				"name": "身體的接觸(Physical touch)",
+				"description": "身體的接觸可以建立或破壞一種關係，它可以傳達恨或愛。對主要愛的語言是身體接觸的人，那信息遠勝於「我恨你」或「我愛你」的字句。巴掌打在臉上，對任何孩子都是有害的，可是對一個愛的語言是撫觸的孩子，那甚至是具毀滅性的。一個溫柔的擁抱，對任何孩子都傳達了愛，可是對主要愛之語是身體接觸的孩子，則表達了強烈的愛；對成年入而言也是如此。 這麼做他會覺得很有愛 擁抱，牽牽手、摸摸頭、拍拍肩，尤其是他哭哭的時後，沒有任何事比摟著他更重要了。"
+			}],
+		question: {},
+		answer: '',
+		answers: [],
+		analytic: {}
+	},
+	watch: {
+		answer: function (nV, oV) {
+			this.answers[this.step - 1] = nV;
+			console.log(this.answers[this.step - 1]);
+		}
+	},
+	created() {
+	},
+	mounted() {
+		this.init();
+	},
+	methods: {
+		init() {
+			this.A = 0;
+			this.B = 0;
+			this.C = 0;
+			this.D = 0;
+			this.E = 0;
+			this.answers = [];
+			for (var i = 0; i < this.questions.length; i++) {
+				this.answers.push('');
+			}
+			this.step = 0;
+		},
+		start() {
+			this.step = 1;
+			this.question = this.questions[this.step - 1];
+		},
+		select(item) {
+			this.answer = item.type;
+		},
+		next() {
+			this.step++;
+			this.answer = this.answers[this.step - 1];
+			this.question = this.questions[this.step - 1];
+			console.log(JSON.stringify(this.answers));
+		},
+		last() {
+			this.step--;
+			this.answer = this.answers[this.step - 1];
+			this.question = this.questions[this.step - 1];
+			console.log(JSON.stringify(this.answers));
+		},
+		send() {
+			this.step++;
+			console.log(JSON.stringify(this.answers));
+			this.A = 0;
+			this.B = 0;
+			this.C = 0;
+			this.D = 0;
+			this.E = 0;
+			for (var i = 0; i < this.answers.length; i++) {
+				var ans = this.answers[i];
+				if (ans == 'A') {
+					this.A++;
+				} else if (ans == 'B') {
+					this.B++;
+				} else if (ans == 'C') {
+					this.C++;
+				} else if (ans == 'D') {
+					this.D++;
+				} else if (ans == 'E') {
+					this.E++;
+				}
+			}
+			var maxOne = 0;
+			var scope = 0;
+			if (this.A > scope) {
+				maxOne = 0;
+				scope = this.A;
+			}
+			if (this.B > scope) {
+				maxOne = 1;
+				scope = this.B;
+			}
+			if (this.C > scope) {
+				maxOne = 2;
+				scope = this.C;
+			}
+			if (this.D > scope) {
+				maxOne = 3;
+				scope = this.D;
+			}
+			if (this.E > scope) {
+				maxOne = 4;
+				scope = this.E;
+			}
+			this.analytic = this.analytics[maxOne];
+			setTimeout(function () {
+				app.chart2(app.A, app.B, app.C, app.D, app.E);
+			}, 500);
 
-        },
-        chart(A, B, C, D, E) {
-            console.log(A);
-            console.log(B);
-            console.log(C);
-            console.log(D);
-            console.log(E);
-            var ctx = document.getElementById("myChart");
-            var options = {
-                maintainAspectRatio: true,
-                spanGaps: false,
-                elements: {
-                    line: {
-                        tension: 0.000001
-                    }
-                },
-                plugins: {
-                    filler: {
-                        propagate: false
-                    },
-                    samples_filler_analyser: {
-                        target: 'chart-analyser'
-                    }
-                },
-                pointStyle: 'circle',
-                scale: {
-                    ticks: {
-                        beginAtZero: true,
-                        min: 0,
-                        max: 12,
-                        fontSize: 12
-                    },
-                    gridLines: {
-                        color: 'rgba(171,171,171,1)',
-                        lineWidth: 1
-                    },
-                    pointLabels: {
-                        fontSize: 14,
-                        fontColor: 'white'
-                    }
-                },
-                legend: {
-                    display: false
-                }
-            };
-            var color = Chart.helpers.color;
+		},
+		chart(A, B, C, D, E) {
+			console.log(A);
+			console.log(B);
+			console.log(C);
+			console.log(D);
+			console.log(E);
+			var ctx = document.getElementById("myChart");
+			var options = {
+				maintainAspectRatio: true,
+				spanGaps: false,
+				elements: {
+					line: {
+						tension: 0.000001
+					}
+				},
+				plugins: {
+					filler: {
+						propagate: false
+					},
+					samples_filler_analyser: {
+						target: 'chart-analyser'
+					}
+				},
+				pointStyle: 'circle',
+				scale: {
+					ticks: {
+						beginAtZero: true,
+						min: 0,
+						max: 12,
+						fontSize: 12
+					},
+					gridLines: {
+						color: 'rgba(171,171,171,1)',
+						lineWidth: 1
+					},
+					pointLabels: {
+						fontSize: 14,
+						fontColor: 'white'
+					}
+				},
+				legend: {
+					display: false
+				}
+			};
+			var color = Chart.helpers.color;
 
-            var myRadarChart = new Chart(ctx, {
-                type: 'radar',
-                responsive: true,
-                data: {
-                    labels: [app.analytics[0].short_name, app.analytics[1].short_name, app.analytics[2].short_name, app.analytics[3].short_name, app.analytics[4].short_name],
-                    datasets: [{
-                        data: [A, B, C, D, E],
-                        backgroundColor: color('rgb(255, 99, 132)').alpha(0.4).rgbString(),
-                        borderColor: 'rgb(255, 99, 132)',
-                        pointBackgroundColor: 'rgb(255, 99, 132)',
+			var myRadarChart = new Chart(ctx, {
+				type: 'radar',
+				responsive: true,
+				data: {
+					labels: [app.analytics[0].short_name, app.analytics[1].short_name, app.analytics[2].short_name, app.analytics[3].short_name, app.analytics[4].short_name],
+					datasets: [{
+						data: [A, B, C, D, E],
+						backgroundColor: color('rgb(255, 99, 132)').alpha(0.4).rgbString(),
+						borderColor: 'rgb(255, 99, 132)',
+						pointBackgroundColor: 'rgb(255, 99, 132)',
 
-                    }]
-                },
-                options: options
-            });
-        }
-    }
+					}]
+				},
+				options: options
+			});
+		},
+		chart2(A, B, C, D, E) {
+			console.log(A);
+			console.log(B);
+			console.log(C);
+			console.log(D);
+			console.log(E);
+			var ctx = document.getElementById("myChart");
+			var color = Chart.helpers.color;
+			var config = {
+				data: {
+					datasets: [{
+						data: [
+							A,
+							B,
+							C,
+							D,
+							E,
+						],
+						backgroundColor: [
+							color('rgb(255, 99, 132)').alpha(0.5).rgbString(),
+							color('rgb(255, 159, 64)').alpha(0.5).rgbString(),
+							color('rgb(255,245,48)').rgbString(),
+							color('rgb(75, 192, 192)').alpha(0.5).rgbString(),
+							color('rgb(54, 162, 235)').alpha(0.5).rgbString(),
+						],
+						label: 'My dataset' // for legend
+					}],
+					labels: [
+						app.analytics[0].short_name, app.analytics[1].short_name, app.analytics[2].short_name, app.analytics[3].short_name, app.analytics[4].short_name
+					]
+				},
+				options: {
+					responsive: true,
+					legend: {
+						position: 'right',
+					},
+					title: {
+						display: true,
+						text: 'Chart.js Polar Area Chart'
+					},
+					scale: {
+						ticks: {
+							beginAtZero: true
+						},
+						reverse: false
+					},
+					animation: {
+						animateRotate: false,
+						animateScale: true
+					}
+				}
+			};
+			var myPolarArea = Chart.PolarArea(ctx, config);
+		},
+	}
 });
 </script>
 </html>
