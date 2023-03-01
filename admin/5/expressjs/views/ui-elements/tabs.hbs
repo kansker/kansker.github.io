@@ -1,0 +1,77 @@
+{{> widgets/breadcrumb/breadcrumb}}
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title">{{ translation.tabs }} </h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">The tabs structure consists of an unordered list of tabs that have hashes corresponding to tab ids. Then when you click on each tab, only the container with the corresponding tab id will become visible. You can add the class .disabled to make a tab inaccessible.</p>
+			<ul id="tabs-swipe-demo" class="tabs mb-4">
+				<li class="tab col s3"><a class="active" href="#test-1">Test 1</a></li>
+				<li class="tab col s3 disabled"><a href="#test-2">Test 2</a></li>
+				<li class="tab col s3"><a href="#test-3">Test 3</a></li>
+			</ul>
+			<div id="test-1" class="col s12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt consequuntur et soluta laudantium aspernatur, cupiditate incidunt reiciendis sunt, eius cum quas. Nesciunt, eum? Quibusdam voluptate sit cum iure vel.</div>
+			<div id="test-2" class="col s12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt consequuntur et soluta laudantium aspernatur, cupiditate incidunt reiciendis sunt, eius cum quas. Nesciunt, eum? Quibusdam voluptate sit cum iure vel.</div>
+			<div id="test-3" class="col s12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt consequuntur et soluta laudantium aspernatur, cupiditate incidunt reiciendis sunt, eius cum quas. Nesciunt, eum? Quibusdam voluptate sit cum iure vel.</div>
+		</div>
+	</div>
+</div>
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title">{{ translation.swipeableTabs }} </h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">By setting the swipeable option to true, you can enable tabs where you can swipe on touch enabled devices to switch tabs. Make sure you keep the tab content divs in the same wrapping container. You can also set the responsiveThreshold option to a screen width in pixels where the swipeable functionality will activate.</p>
+			<ul id="tabs-swipe-demo" class="tabs tabs2 mb-4">
+				<li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
+				<li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
+				<li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+			</ul>
+			<div id="test-swipe-1" class="col s12 blue white-text p-3">Test 1</div>
+			<div id="test-swipe-2" class="col s12 red white-text p-3">Test 2</div>
+			<div id="test-swipe-3" class="col s12 green white-text p-3">Test 3</div>
+		</div>
+	</div>
+</div>
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{ translation.fixedWidthTabs }} </h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">Add the .tabs-fixed-width class to the tabs container.</p>
+			<ul class="tabs tabs-fixed-width tab-demo z-depth-1 mb-4">
+				<li class="tab"><a href="#test1-1">Test 1</a></li>
+				<li class="tab"><a class="active" href="#test1-2">Test 2</a></li>
+				<li class="tab disabled"><a href="#test1-3">Disabled Tab</a></li>
+				<li class="tab"><a href="#test1-4">Test 4</a></li>
+				<li class="tab"><a href="#test1-0">Test 5</a></li>
+			</ul>
+			<div id="test1-1" class="col s12">
+				<p>Test 1</p>
+			</div>
+			<div id="test1-2" class="col s12">
+				<p>Test 2</p>
+			</div>
+			<div id="test1-3" class="col s12">
+				<p>Test 3</p>
+			</div>
+			<div id="test1-4" class="col s12">
+				<p>Test 4</p>
+			</div>
+			<div id="test1-0" class="col s12">
+				<p>Test 5</p>
+			</div>
+		</div>
+	</div>
+</div>
+{{#extend 'scripts'}}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.tabs').tabs();
+	});
+
+</script>
+{{/extend}}

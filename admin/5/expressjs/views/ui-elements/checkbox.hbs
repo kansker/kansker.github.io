@@ -1,0 +1,50 @@
+{{> widgets/breadcrumb/breadcrumb}}
+<div class="card">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{ translation.checkboxes }} </h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind our custom checkbox with the input. Add the input's id as the value of the for attribute of the label.
+			</p>
+			<form action="#">
+				<p>
+					<label>
+        				<input type="checkbox" autocomplete="off" />
+        				<span>Red</span>
+      			</label>
+				</p>
+				<p>
+					<label>
+			        	<input type="checkbox" autocomplete="off" checked="checked" />
+			        	<span>Yellow</span>
+			      </label>
+				</p>
+				<p>
+					<label>
+			        	<input type="checkbox" autocomplete="off" class="filled-in" checked="checked" />
+			        	<span>Filled in</span>
+			      </label>
+				</p>
+				<p>
+					<label>
+			        	<input id="indeterminate-checkbox" autocomplete="off" type="checkbox" />
+			        	<span>Indeterminate Style</span>
+			      </label>
+				</p>
+				<p>
+					<label>
+			        	<input type="checkbox" autocomplete="off" checked="checked" disabled="disabled" />
+			        	<span>Green</span>
+			      </label>
+				</p>
+				<p>
+					<label>
+			        	<input type="checkbox" autocomplete="off" disabled="disabled" />
+			        	<span>Brown</span>
+			      </label>
+				</p>
+			</form>
+		</div>
+	</div>
+</div>

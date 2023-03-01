@@ -1,0 +1,21 @@
+{{> widgets/breadcrumb/breadcrumb}}
+	<div class="card mb-4">
+		<div class="card-content">
+			<textarea name="content" id="editor">
+				&lt;p&gt;I am example.&lt;/p&gt;
+			</textarea>
+		</div>
+	</div>
+{{#extend 'scripts' }}
+	<script type="text/javascript" src="/plugins/ckEditor/ckeditor.js"></script>
+	<script type="text/javascript">
+		ClassicEditor
+    	.create( document.querySelector( '#editor' ) )
+    		.then( editor => {
+        		console.log( editor );
+    		} )
+    		.catch( error => {
+        		console.error( error );
+    		} );
+	</script>
+{{/extend}}

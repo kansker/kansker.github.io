@@ -1,0 +1,120 @@
+{{> widgets/breadcrumb/breadcrumb}}
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{ translation.inputField }} </h3>
+		</div>
+		<div class="card-data">
+			<div class="row">
+				<div class="input-field col s12 m8 l6">
+					<input id="label_text" autocomplete="off" type="text" class="validate">
+					<label for="label_text">Label Text</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{translation.iconPrefixes }} </h3>
+		</div>
+		<div class="card-data">
+			<div class="row">
+				<div class="input-field col s12 m8 l6">
+					<i class="material-icons prefix">account_circle</i>
+					<input id="icon_prefix" autocomplete="off" type="text" class="validate">
+					<label for="icon_prefix">First Name</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{ translation.customerrorsuccessmassage }} </h3>
+		</div>
+		<div class="card-data">
+			<div class="row">
+				<div class="input-field col s12 m8 l6">
+					<input id="email" autocomplete="off" type="email" class="validate">
+					<label for="email">Email</label>
+					<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{ translation.textarea }} </h3>
+		</div>
+		<div class="card-data">
+			<div class="row">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12 m8 l6">
+							<textarea id="textarea1" autocomplete="off" class="materialize-textarea"></textarea>
+							<label for="textarea1">Textarea</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{ translation.fileInput }} </h3>
+		</div>
+		<div class="card-data">
+			<form action="#">
+				<div class="row">
+					<div class="input-field col s12 m8 l6">
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>File</span>
+								<input type="file">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{ translation.characterCounter }} </h3>
+		</div>
+		<div class="card-data">
+			<div class="row">
+				<div class="input-field col s12 m8 l6">
+					<input id="input_text" type="text" data-length="10">
+					<label for="input_text">Input text</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{#extend 'scripts'}}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('input#input_text').characterCounter();
+	});
+
+</script>
+{{/extend}}

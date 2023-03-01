@@ -1,0 +1,103 @@
+{{> widgets/breadcrumb/breadcrumb}}
+
+<div class="layout row wrap">
+   <div class="col s12 m6">
+      <div class="card">
+         <div class="card-content">
+            <div class="card-header justify-content-between d-flex">
+               <h3 class="card-title"> {{ translation.materializeSelect }}</h3>
+            </div>
+            <div class="card-data">
+               <div class="input-field">
+                  <select>
+                     <option value="" disabled selected>Choose your option</option>
+                     <option value="1">Option 1</option>
+                     <option value="2">Option 2</option>
+                     <option value="3">Option 3</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col s12 m6">
+      <div class="card">
+         <div class="card-content">
+            <div class="card-header justify-content-between d-flex">
+               <h3 class="card-title"> {{ translation.materializeMultipleSelect }} </h3>
+            </div>
+            <div class="card-data">
+               <div class="input-field">
+                  <select multiple>
+                     <option value="" disabled selected>Choose your option</option>
+                     <option value="1">Option 1</option>
+                     <option value="2">Option 2</option>
+                     <option value="3">Option 3</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col s12 m6">
+      <div class="card">
+         <div class="card-content">
+            <div class="card-header justify-content-between d-flex">
+               <h3 class="card-title"> {{ translation.optionsGroup }} </h3>
+            </div>
+            <div class="card-data">
+               <div class="input-field">
+                  <select>
+                     <optgroup label="team 1">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                     </optgroup>
+                     <optgroup label="team 2">
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                     </optgroup>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col s12 m6">
+      <div class="card">
+         <div class="card-content">
+            <div class="card-header justify-content-between d-flex">
+               <h3 class="card-title">{{ translation.imagesInSelect }} </h3>
+            </div>
+            <div class="card-data">
+               <div class="input-field">
+                  <select class="icons">
+                     <option value="" disabled selected>Choose your option</option>
+                     <option value="" data-icon="/images/avatars/user-1.jpg">example 1</option>
+                     <option value="" data-icon="/images/avatars/user-2.jpg">example 2</option>
+                     <option value="" data-icon="/images/avatars/user-3.jpg">example 3</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col s12 m6">
+      <div class="card">
+         <div class="card-content">
+            <div class="card-header justify-content-between d-flex">
+               <h3 class="card-title"> {{ translation.browserSelect }} </h3>
+            </div>
+            <div class="card-data">
+               <div class="input-field">
+                  <select class="browser-default">
+                     <option value="" disabled selected>Choose your option</option>
+                     <option value="1">Option 1</option>
+                     <option value="2">Option 2</option>
+                     <option value="3">Option 3</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

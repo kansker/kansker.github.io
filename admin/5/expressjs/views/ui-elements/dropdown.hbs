@@ -1,0 +1,67 @@
+{{> widgets/breadcrumb/breadcrumb}}
+<div class="row">
+	<div class="col s12 m4">
+		<div class="card">
+			<div class="card-content">
+				<div class="card-header justify-content-between d-flex">
+					<h3 class="card-title"> {{ translation.activator }} </h3>
+				</div>
+				<div class="card-data">
+					<a class='dropdown-trigger btn' href='#' data-target='dropdown10'>DROPDOWN</a>
+					<ul id='dropdown10' class='dropdown-content'>
+						<li><a href="javascript:;">Refresh</a></li>
+						<li><a href="javascript:;">Settings</a></li>
+						<li><a href="javascript:;">Help</a></li>
+						<li><a href="javascript:;">Sign Out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m4">
+		<div class="card">
+			<div class="card-content">
+				<div class="card-header justify-content-between d-flex">
+					<h3 class="card-title"> {{translation.hover}} </h3>
+				</div>
+				<div class="card-data">
+					<a class='dropdown-trigger dropdown11 btn red' href='#' data-target='dropdown11'>DROPDOWN</a>
+					<ul id='dropdown11' class='dropdown-content'>
+						<li><a href="javascript:;">Refresh</a></li>
+						<li><a href="javascript:;">Settings</a></li>
+						<li><a href="javascript:;">Help</a></li>
+						<li><a href="javascript:;">Sign Out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m4">
+		<div class="card">
+			<div class="card-content">
+				<div class="card-header justify-content-between d-flex">
+					<h3 class="card-title"> {{ translation.menus }} </h3>
+				</div>
+				<div class="card-data">
+					<a href="javascript:;" class="dropdown-trigger" data-target='dropdown11'>
+  						<i aria-hidden="true" class="icon material-icons theme--light">more_vert</i>
+  					</a>
+					<ul id='dropdown12' class='dropdown-content'>
+						<li><a href="javascript:;">Refresh</a></li>
+						<li><a href="javascript:;">Settings</a></li>
+						<li><a href="javascript:;">Help</a></li>
+						<li><a href="javascript:;">Sign Out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{#extend 'scripts'}}
+<script type="text/javascript">
+	$('.dropdown11').dropdown({
+		hover: true
+	});
+
+</script>
+{{/extend}}

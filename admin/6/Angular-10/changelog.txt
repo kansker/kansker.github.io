@@ -1,0 +1,7 @@
+ - updated to angular 10
+ - upgrade all third-party modules
+ - updated 'fullcalendar' structure
+ - bug fixed datatable options like, colrecorder, searcihing, responsive
+ - import sweetalert2 css to third-party module scss
+ - change images and font icon path in all style files.
+ - task-board service bug fixed

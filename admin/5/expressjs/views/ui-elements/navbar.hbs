@@ -1,0 +1,155 @@
+{{> widgets/breadcrumb/breadcrumb}}
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{translation.rightAlignedLinks}}</h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">To right align your navbar links, just add a right class to your ul that contains them.</p>
+			<nav>
+				<div class="nav-wrapper">
+					<a href="javascript:;" class="brand-logo px-3">Logo</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="javascript:;">Sass</a></li>
+						<li><a href="javascript:;">Components</a></li>
+						<li><a href="javascript:;">JavaScript</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title">{{ translation.leftAlignedLinks }}</h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">To left align your navbar links, just add a left class to your ul that contains them.</p>
+			<nav>
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo right px-3">Logo</a>
+					<ul id="nav-mobile" class="left hide-on-med-and-down">
+						<li><a href="javascript:;">Sass</a></li>
+						<li><a href="javascript:;">Components</a></li>
+						<li><a href="javascript:;">JavaScript</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title">{{translation.centeringTheLogo}}</h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your a class="brand-logo". You will have to make sure yourself that links do not overlap if you use this.</p>
+			<nav>
+				<div class="nav-wrapper">
+					<a href="javascript:;" class="brand-logo center px-3">Logo</a>
+					<ul id="nav-mobile" class="left hide-on-med-and-down">
+						<li><a href="javascript:;">Sass</a></li>
+						<li><a href="javascript:;">Components</a></li>
+						<li><a href="javascript:;">JavaScript</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title">{{ translation.activeItems }}</h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">Add active class to your li tags to denote the current page.</p>
+			<nav>
+				<div class="nav-wrapper">
+					<a href="javascript:;" class="brand-logo center px-3">Logo</a>
+					<ul class="left hide-on-med-and-down">
+						<li><a href="javascript:;">Sass</a></li>
+						<li><a href="javascript:;">Components</a></li>
+						<li class="active"><a href="javascript:;">JavaScript</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title"> {{translation.extendedNavbarWithTabs}} </h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+			<nav class="nav-extended">
+				<div class="nav-wrapper">
+					<a href="javascript:;" class="brand-logo px-3">Logo</a>
+					<a href="javascript:;" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="javascript:;">Sass</a></li>
+						<li><a href="javascript:;">Components</a></li>
+						<li><a href="javascript:;">JavaScript</a></li>
+					</ul>
+				</div>
+				<div class="nav-content">
+					<ul class="tabs tabs-transparent">
+						<li class="tab"><a href="#test2-1">Test 1</a></li>
+						<li class="tab"><a class="active" href="#test2-2">Test 2</a></li>
+						<li class="tab disabled"><a href="#test2-3">Disabled Tab</a></li>
+						<li class="tab"><a href="#test2-4">Test 4</a></li>
+					</ul>
+				</div>
+			</nav>
+			<ul class="sidenav" id="mobile-demo">
+				<li><a href="javascript:;">Sass</a></li>
+				<li><a href="javascript:;">Components</a></li>
+				<li><a href="javascript:;">JavaScript</a></li>
+			</ul>
+			<div id="test2-1" class="col s12 p-4">Test 1</div>
+			<div id="test2-2" class="col s12 p-4">Test 2</div>
+			<div id="test2-3" class="col s12 p-4">Test 3</div>
+			<div id="test2-4" class="col s12 p-4">Test 4</div>
+		</div>
+	</div>
+</div>
+
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title">{{translation.navbarDropdownMenu}}</h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+			<ul id="dropdown51" class="dropdown-content">
+				<li><a href="javascript:;">one</a></li>
+				<li><a href="javascript:;">two</a></li>
+				<li class="divider"></li>
+				<li><a href="javascript:;">three</a></li>
+			</ul>
+			<nav>
+				<div class="nav-wrapper">
+					<a href="javascript:;" class="brand-logo px-3">Logo</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="javascript:;">Sass</a></li>
+						<li><a href="javascript:;">Components</a></li>
+						<li>
+							<a class="dropdown-trigger" href="javascript:;" data-target="dropdown51">
+	      					Dropdown
+	      					<i class="material-icons right">arrow_drop_down</i>
+	      				</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>

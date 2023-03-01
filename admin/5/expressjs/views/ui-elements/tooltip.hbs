@@ -1,0 +1,23 @@
+{{> widgets/breadcrumb/breadcrumb}}
+<div class="card mb-4">
+	<div class="card-content">
+		<div class="card-header justify-content-between d-flex">
+			<h3 class="card-title">{{translation.tooltip}}</h3>
+		</div>
+		<div class="card-data">
+			<p class="pb-4">Tooltips are small, interactive, textual hints for mainly graphical elements. When using icons for actions you can use a tooltip to give people clarification on its function.</p>
+			<a class="btn tooltipped red mb-2" data-position="bottom" data-tooltip="I am a tooltip">Bottom</a>
+			<a class="btn tooltipped green mb-2" data-position="top" data-tooltip="I am a tooltip">Top</a>
+			<a class="btn tooltipped yellow mb-2" data-position="left" data-tooltip="I am a tooltip">Left</a>
+			<a class="btn tooltipped blue mb-2" data-position="right" data-tooltip="I am a tooltip">Right</a>
+		</div>
+	</div>
+</div>
+{{#extend 'scripts'}}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.tooltipped').tooltip();
+	});
+
+</script>
+{{/extend}}
